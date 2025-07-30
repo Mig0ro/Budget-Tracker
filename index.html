@@ -8,14 +8,21 @@
 </head>
 <body>
   <h1>Simple Budget Tracker</h1>
+  <input type="number" id="salary-input" placeholder="Enter your monthly salary" />
+<button id="set-salary">Set Salary</button>
+<button id ="reset-btn">Reset</button>
+<p id="net-pay">Net Pay: $0.00</p>
+
 
   <form id="expense-form">
+    
     <input type="text" id="expense-name" placeholder="Expense Name" required />
     <input type="number" id="expense-amount" placeholder="Amount" required />
     <select id="expense-category">
       <option value="Food">Food</option>
       <option value="Rent">Rent</option>
       <option value="Entertainment">Entertainment</option>
+      <option value="Utilities">Utilities</option>
       <option value="Other">Other</option>
     </select>
     <button type="submit">Add Expense</button>
@@ -27,6 +34,12 @@
   <h2>Summary</h2>
   <p>Total: $<span id="total">0</span></p>
 
+  <canvas id="expenseChart"></canvas>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
+
+
+
+
