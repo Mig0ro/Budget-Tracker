@@ -1,3 +1,5 @@
+document.body.style.backgroundColor = "#141313ff";
+
 let total = 0;
 const expenseForm = document.getElementById("expense-form");
 const expenseList = document.getElementById("expense-list");
